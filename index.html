@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>☢️ Bunker Survival</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>☢️ BUNKER SURVIVAL</h1>
+
+<div class="dayBox">
+<h2>Ngày <span id="day">1</span>/30</h2>
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<div class="label">💧 Nước</div>
+<div class="bar">
+<div id="waterBar" class="fill water"></div>
+</div>
+<span id="waterText">100</span>
+</div>
+
+<div class="stat">
+<div class="label">🍖 Thực phẩm</div>
+<div class="bar">
+<div id="foodBar" class="fill food"></div>
+</div>
+<span id="foodText">100</span>
+</div>
+
+<div class="stat">
+<div class="label">⚡ Điện</div>
+<div class="bar">
+<div id="powerBar" class="fill power"></div>
+</div>
+<span id="powerText">100</span>
+</div>
+
+<div class="stat">
+<div class="label">🫁 Oxy</div>
+<div class="bar">
+<div id="oxygenBar" class="fill oxygen"></div>
+</div>
+<span id="oxygenText">100</span>
+</div>
+
+</div>
+
+<h2>Hành động</h2>
+
+<div class="actions">
+
+<button onclick="action(1)">
+🔍 Tìm kiếm
+</button>
+
+<button onclick="action(2)">
+💧 Lọc nước
+</button>
+
+<button onclick="action(3)">
+🌱 Trồng rau
+</button>
+
+<button onclick="action(4)">
+⚡ Sửa máy phát
+</button>
+
+<button onclick="action(5)">
+😴 Nghỉ ngơi
+</button>
+
+</div>
+
+<h2>📜 Nhật ký</h2>
+
+<div id="log" class="log">
+
+Game bắt đầu...
+
+</div>
+
+<button class="restart" onclick="restartGame()">
+🔄 Chơi lại
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
